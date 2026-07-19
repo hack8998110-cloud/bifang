@@ -9,6 +9,8 @@ This file records what is ready to publish and what should stay out of the first
 - `CHANGELOG.md`
 - `RELEASE_NOTES_V0.1_OPEN_SOURCE.md`
 - `RELEASE_NOTES_V0.2_DEV.md`
+- `RELEASE_NOTES_V0.2_RC.md`
+- `V0.2_FINAL_ACCEPTANCE.md`
 - `templates/starter_output_template.md`
 - `tests/smoke_cases.md`
 - `tests/director_thinking_pressure_tests.md`
@@ -46,7 +48,7 @@ This file records what is ready to publish and what should stay out of the first
 ## Remaining Before Public Release
 
 - Choose and add a `LICENSE`.
-- Keep V0.1 open source skills-only; decide later whether a cleaned orchestration layer should be released.
+- Keep V0.2-rc open source skills-only; decide later whether a cleaned orchestration layer should be released.
 - Replace contest-specific package audit with an open-source audit.
 - Run the smoke cases on at least three real industries: local store, high-ticket service, and course/IP.
 - Review all non-skill docs for old wording such as "爆款引擎", hardcoded internal paths, and generated artifacts.
