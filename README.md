@@ -31,7 +31,23 @@ V0.2-rc 是正式候选版。当前目标是把 V0.1 的“能用”打磨成“
 
 ## 安装
 
-把需要的 skill 文件夹复制到你的 Agent skill 目录。
+毕方开源版是文本 skills，不需要 `npm install` 或 `pip install`。
+
+Windows 用户可以在仓库根目录运行：
+
+```powershell
+.\install.ps1
+```
+
+默认安装核心模块；如需安装全部公开模块：
+
+```powershell
+.\install.ps1 -All
+```
+
+详细说明见 [INSTALL.md](INSTALL.md)。
+
+也可以手动把需要的 skill 文件夹复制到你的 Agent skill 目录。
 
 Codex 默认目录通常是：
 
