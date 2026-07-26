@@ -66,7 +66,7 @@
 ## beta-2.7
 
 - 用网页版历史真实样例试跑：本地餐饮、生鲜馄饨、三农平谷大桃、洗护冷制皂、手工皂。
-- 新增 `tests/instance_runs_2026-07-18.md`，记录实例输出、评分和旧版失败点。
+- 新增 `docs/archive/tests/instance_runs_2026-07-18.md`，记录实例输出、评分和旧版失败点。
 - `bifang-topic`：空观看理由、旧字段 `viralElement/score/爆款元素`、跨行业风险套话一律视为旧流程污染。
 - `bifang-review`：新增旧流程污染打回规则，尤其拦截空 `watchReason`、行业风险错配和硬 CTA。
 - `bifang-report`：选题清单改为用户决策阶段/观看理由/看完收获/可信证据，不再默认展示评分。
@@ -77,7 +77,7 @@
 - 新增 `tests/positive_industry_starter_cases.md`，用 8 个低信息行业样例验证正向启发能力。
 - `bifang-starter`：新增“行业翻译成的用户判断题”显式输出项，低信息输入先教客户判断用户想看什么。
 - `bifang-topic`：新增“用户判断题”字段和正向启发规则，要求选题能看出“行业 → 用户判断题 → 选题”的推导链。
-- 新增 `tests/positive_industry_instance_runs_2026-07-18.md`，人工跑完 8 个正向行业样例并沉淀薄弱点。
+- 新增 `docs/archive/tests/positive_industry_instance_runs_2026-07-18.md`，人工跑完 8 个正向行业样例并沉淀薄弱点。
 - `bifang-starter/topic`：补强 B2B 工况假设、咨询课程具体场景、服务方说服客户保留用户视角三类弱点。
 - `bifang-baokuan` 和 `bifang-v4-orchestrator`：同步“行业翻译成的用户判断题”，修正 V4 判断核字段数量，保持多入口一致。
 - `README`：补充正向行业入口验收和失败回归验收文件，方便开源用户测试。
