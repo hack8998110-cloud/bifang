@@ -86,6 +86,7 @@ chmod +x ./install.sh
 ```text
 templates/client_trial_account_plan.md
 templates/client_trial_prompt_pack.md
+templates/user_feedback_record.md
 ```
 
 参考样例：
@@ -231,6 +232,7 @@ V0.2-rc 已完成的内部验收摘要：
 - [QUICKSTART.md](QUICKSTART.md)：安装后的第一句话怎么问。
 - [templates/client_trial_account_plan.md](templates/client_trial_account_plan.md)：客户试用账号基础规划模板。
 - [templates/client_trial_prompt_pack.md](templates/client_trial_prompt_pack.md)：客户试用提示词包。
+- [templates/user_feedback_record.md](templates/user_feedback_record.md)：试用反馈记录表，用于判断是否可以升正式版。
 - [examples/client_trial/](examples/client_trial/)：本地餐饮、全屋定制、知识 IP 三个试用交付样例。
 
 ## 许可
