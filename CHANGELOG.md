@@ -7,6 +7,7 @@
 - 新增 `templates/client_trial_prompt_pack.md`，用于快速生成客户试用规划、老账号复盘、第一条脚本和反馈问题。
 - 新增 `templates/user_feedback_record.md`，用于记录真实用户试用反馈和升级判断。
 - 新增 `docs/promotion_kit.md` 和 `docs/first_10_user_test_plan.md`，用于招募第一批真实试用用户。
+- 新增 `validate-install.ps1`、`validate-install.sh` 和 `tests/self_check_cases.md`，用于安装后验证和对话自测。
 - 新增 `examples/client_trial/` 三个样例：社区面馆、全屋定制、知识 IP/课程顾问。
 - README 增加快速开始、试用模板和样例入口。
 - 安装说明改为跨平台口径，明确毕方是文本 skills，不限制 Windows/macOS/Linux。

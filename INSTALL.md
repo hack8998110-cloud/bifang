@@ -162,6 +162,23 @@ macOS / Linux：
 
 每个 skill 文件夹里必须有 `SKILL.md`。
 
+也可以运行验证脚本。
+
+Windows：
+
+```powershell
+.\validate-install.ps1
+```
+
+macOS / Linux：
+
+```bash
+chmod +x ./validate-install.sh
+./validate-install.sh
+```
+
+验证通过后，再用 [tests/self_check_cases.md](tests/self_check_cases.md) 做 3 条对话自测。
+
 ## 常见问题
 
 ### 复制到哪里？

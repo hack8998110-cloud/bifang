@@ -46,6 +46,7 @@ Windows 可以在仓库根目录运行：
 
 ```powershell
 .\install.ps1
+.\validate-install.ps1
 ```
 
 macOS / Linux 可以运行：
@@ -53,6 +54,8 @@ macOS / Linux 可以运行：
 ```bash
 chmod +x ./install.sh
 ./install.sh
+chmod +x ./validate-install.sh
+./validate-install.sh
 ```
 
 默认安装核心模块；如需安装全部公开模块：
@@ -230,6 +233,7 @@ V0.2-rc 已完成的内部验收摘要：
 ## 示例和模板
 
 - [QUICKSTART.md](QUICKSTART.md)：安装后的第一句话怎么问。
+- [tests/self_check_cases.md](tests/self_check_cases.md)：安装后 3 条自测用例。
 - [templates/client_trial_account_plan.md](templates/client_trial_account_plan.md)：客户试用账号基础规划模板。
 - [templates/client_trial_prompt_pack.md](templates/client_trial_prompt_pack.md)：客户试用提示词包。
 - [templates/user_feedback_record.md](templates/user_feedback_record.md)：试用反馈记录表，用于判断是否可以升正式版。
