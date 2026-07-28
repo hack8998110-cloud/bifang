@@ -1,5 +1,13 @@
 # Changelog
 
+## V0.2-rc trial kit
+
+- 新增 `QUICKSTART.md`，解决安装后第一句话不知道怎么问的问题。
+- 新增 `templates/client_trial_account_plan.md`，用于给潜在客户做账号基础规划试用交付。
+- 新增 `examples/client_trial/` 三个样例：社区面馆、全屋定制、知识 IP/课程顾问。
+- README 增加快速开始、试用模板和样例入口。
+- 安装说明改为跨平台口径，明确毕方是文本 skills，不限制 Windows/macOS/Linux。
+
 ## V0.2-rc
 
 - V0.2-dev 经过两轮真实公开账号低信息压测、老账号内容复盘、客户改稿纠偏、高风险脚本审核和完整交付链路压测后，升级为 V0.2 正式候选版。

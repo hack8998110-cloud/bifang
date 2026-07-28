@@ -69,6 +69,32 @@ chmod +x ./install.sh
 
 也可以手动把需要的 skill 文件夹复制到你的 Agent skill 目录。
 
+## 快速开始
+
+安装后先看 [QUICKSTART.md](QUICKSTART.md)。
+
+它提供 5 类常用问法：
+
+- 商家自己做内容
+- 编导/代运营帮客户做内容
+- 有账号链接或主页截图
+- 有旧作品数据
+- 已有选题想写脚本
+
+如果你想给客户做一次试用演示，可以使用：
+
+```text
+templates/client_trial_account_plan.md
+```
+
+参考样例：
+
+```text
+examples/client_trial/local_restaurant_community_noodle_shop.md
+examples/client_trial/home_custom_mumu_style.md
+examples/client_trial/knowledge_ip_course_consultant.md
+```
+
 推荐先安装核心模块：
 
 ```text
@@ -198,6 +224,12 @@ V0.2-rc 已完成的内部验收摘要：
 ```
 
 开源版只保留通用方法和干净测试样例；内部压测明细、私有研究和客户资料不进入开源包。
+
+## 示例和模板
+
+- [QUICKSTART.md](QUICKSTART.md)：安装后的第一句话怎么问。
+- [templates/client_trial_account_plan.md](templates/client_trial_account_plan.md)：客户试用账号基础规划模板。
+- [examples/client_trial/](examples/client_trial/)：本地餐饮、全屋定制、知识 IP 三个试用交付样例。
 
 ## 许可
 
