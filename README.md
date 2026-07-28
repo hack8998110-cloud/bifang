@@ -240,6 +240,15 @@ V0.2-rc 已完成的内部验收摘要：
 - [examples/client_trial/](examples/client_trial/)：本地餐饮、全屋定制、知识 IP 三个试用交付样例。
 - [docs/promotion_kit.md](docs/promotion_kit.md)：试用推广话术和招募文案。
 - [docs/first_10_user_test_plan.md](docs/first_10_user_test_plan.md)：第一批 10 个真实用户测试计划。
+- [docs/feedback_guide.md](docs/feedback_guide.md)：反馈收集和版本迭代判断指南。
+
+## 反馈
+
+毕方不会自动上传使用数据。真实反馈需要你主动提交。
+
+- 使用体验：提交 GitHub Issue 的“试用反馈”。
+- 安装或输出问题：提交 GitHub Issue 的“Bug 报告”。
+- 私域试用：使用 [templates/user_feedback_record.md](templates/user_feedback_record.md) 记录。
 
 ## 许可
 
