@@ -1,6 +1,6 @@
 # 毕方 V0.2-rc
 
-![毕方编导思维逻辑](assets/bifang-v0.2-dev-pixel-promo-hero.png)
+![毕方编导思维使用路径](assets/bifang-readme-intro.svg)
 
 毕方是一组可迁移的商业短视频编导 skills，用来帮助商家、编导、代运营和内容创作者先判断“该拍什么”，再进入选题、脚本、审核、改稿和复盘。
 
