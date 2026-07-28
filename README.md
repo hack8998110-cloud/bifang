@@ -234,6 +234,8 @@ V0.2-rc 已完成的内部验收摘要：
 - [templates/client_trial_prompt_pack.md](templates/client_trial_prompt_pack.md)：客户试用提示词包。
 - [templates/user_feedback_record.md](templates/user_feedback_record.md)：试用反馈记录表，用于判断是否可以升正式版。
 - [examples/client_trial/](examples/client_trial/)：本地餐饮、全屋定制、知识 IP 三个试用交付样例。
+- [docs/promotion_kit.md](docs/promotion_kit.md)：试用推广话术和招募文案。
+- [docs/first_10_user_test_plan.md](docs/first_10_user_test_plan.md)：第一批 10 个真实用户测试计划。
 
 ## 许可
 
