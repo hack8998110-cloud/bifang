@@ -2,6 +2,7 @@
 
 ## V0.2-rc trial kit
 
+- `bifang-starter/topic/script/review/rewrite` 新增命题澄清、事实结构、显示优先于声称、意义闸门，避免模糊需求直接生成和商家自夸式内容通过。
 - 新增 `QUICKSTART.md`，解决安装后第一句话不知道怎么问的问题。
 - 新增 `templates/client_trial_account_plan.md`，用于给潜在客户做账号基础规划试用交付。
 - 新增 `templates/client_trial_prompt_pack.md`，用于快速生成客户试用规划、老账号复盘、第一条脚本和反馈问题。
