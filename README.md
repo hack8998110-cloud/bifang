@@ -103,6 +103,10 @@ templates/user_feedback_record.md
 
 如果你已经跑过一次真实行业测试，建议按 [docs/feedback_guide.md](docs/feedback_guide.md) 收集反馈。
 
+也可以直接扫码交流，反馈安装问题、行业样本、使用结果和跑偏案例：
+
+![微信交流反馈](assets/wechat-feedback.png)
+
 最少反馈这 5 件事：
 
 1. 你的行业和产品是什么。
@@ -279,6 +283,4 @@ V0.2-rc 已完成的内部验收摘要：
 
 ## 交流与反馈
 
-如果你正在测试毕方，欢迎反馈使用问题、行业样本和改进建议。
-
-![微信交流反馈](assets/wechat-feedback.png)
+如果你正在测试毕方，欢迎反馈使用问题、行业样本和改进建议。二维码见上方“试用反馈”。
