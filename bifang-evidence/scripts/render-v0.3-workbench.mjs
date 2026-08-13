@@ -1,0 +1,10 @@
+#!/usr/bin/env node
+import fs from "node:fs";
+import path from "node:path";
+const args = process.argv.slice(2); const input = args.shift(); function flag(name, fallback = "") { const i=args.indexOf(name); if(i<0)return fallback; const v=args[i+1]??fallback; args.splice(i,2); return v; }
+if (!input) { console.error("Usage: node render-v0.3-workbench.mjs evidence.json --industry ... --business ... --audience ... --pain ... --proof ... --out brief.md"); process.exit(2); }
+const out=flag("--out", "outputs/bifang-v0.3-workbench.md"); const data=JSON.parse(fs.readFileSync(input,"utf8")); const business=flag("--business", data.account?.business || "待补"), audience=flag("--audience", data.account?.audience || "待补");
+const industry=flag("--industry","待补"), pain=flag("--pain","待补"), proof=flag("--proof","待补"); const videos=data.videos||[];
+const list=videos.map(v=>{const f=v.facts||{}; const metric=Object.entries({...v.performance,...v.conversion}).filter(([,x])=>x!==null&&x!==undefined).map(([k,x])=>`${k}=${x}`).join("，")||"暂无数据"; const transcript=(f.transcript_segments||[]).map(s=>`[${s.start}-${s.end}s|${s.id}] ${s.text}`).join("\n"); const frames=(f.key_frames||[]).slice(0,12).map(x=>`[${x.timestamp}s] ${x.description||"仅有关键帧，待人工标注"} ${x.path||""}`).join("\n"); return `### ${v.id}｜${f.title||"未提供标题"}\n- 链接：${f.source_url||"未提供"}\n- 发布时间：${f.published_at||"未提供"}\n- 数据：${metric}\n\n逐字稿：\n${transcript||"未提供"}\n\n关键帧：\n${frames||"未提供"}`;}).join("\n\n");
+const prompt=`# 毕方 V0.3 工作台\n\n以下是唯一作品证据包。不可重复索取其中已有的链接、逐字稿、关键帧或数据；未知项必须写待验证，不可编造。\n\n客户信息：行业=${industry}；卖什么=${business}；目标用户=${audience}；最大顾虑=${pain}；真实证据=${proof}\n\n${list}\n\n请一次完成：\n1. 选一条对标片做五段结构：开头怎么抓人、讲了哪个问题、用了什么场景、中间怎么解释、结尾怎么收；所有判断引用对应片段 ID。\n2. 写清可迁移/不可迁移，并给结构保留、痛点更准、证据成交三版 45-60 秒可拍稿；每版都含第一镜头、第一屏、评论承接和私信第一问。\n3. 若至少 9 条视频，按高播放/高转化/低效常发分组，归类流量/信任/成交/无效消耗，输出继续、停止、重写和 7 天发布表；若不足 9 条，只给轻量方向和待补样本。\n4. 依据已有数据给 24-48 小时复盘动作：加码、停发、改开头、改承接或重选题，并说明触发条件。\n`;
+fs.mkdirSync(path.dirname(path.resolve(out)),{recursive:true}); fs.writeFileSync(out,prompt,"utf8"); console.log(JSON.stringify({ok:true,out,videos:videos.length},null,2));
