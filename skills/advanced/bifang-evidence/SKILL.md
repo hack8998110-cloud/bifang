@@ -36,3 +36,4 @@ node bifang-evidence/scripts/record-post-publish.mjs outputs/<account>.evidence.
 2. `analysis` 是判断，必须引用片段 ID 或数据字段，且允许写“待验证”。
 3. 老账号将多条 `videos` 放进同一证据包，至少包含高播放、高转化和低效常发三组。
 4. 发布后只更新对应视频的 `performance` 和 `conversion`，下一次规划继续读取同一个文件。
+5. 用作信任、结果或效果依据的客户原话、截图、案例和数据，额外记录来源、适用范围、时间和可公开性；无来源或授权时只保留为待核线索、匿名化问题或补问项。

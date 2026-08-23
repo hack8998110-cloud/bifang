@@ -3,8 +3,8 @@
 发布唯一来源是仓库根目录。发布前运行：
 
 ```powershell
-.\scripts\release-v0.3.6.ps1
-.\scripts\release-v0.3.6.ps1 -Build
+.\scripts\release-v0.3.7.ps1
+.\scripts\release-v0.3.7.ps1 -Build
 ```
 
 脚本会确认：

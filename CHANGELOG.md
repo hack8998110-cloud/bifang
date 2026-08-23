@@ -1,5 +1,12 @@
 # Changelog
 
+## V0.3.7
+
+- 公开引入可复现的方法增强：内容主功能、角色地图、镜头的观看任务/证明任务双标签，以及证据来源闸门。
+- `starter`、`topic`、`diagnosis`、`account-plan`、`script`、`review`、`evidence` 同步增加缺口降级规则；证据不足时只交付补问/补拍或待验证项。
+- 新增公开验收用例，覆盖过程内容、案例/数据、知识/观点和多账号矩阵边界。
+- 不包含任何私有研究记录、来源人物、原作话术、客户案例或内测结果。
+
 ## V0.3.6
 
 - 重组开源仓库：Skill 分为 `skills/core`、`skills/advanced` 与 `skills/legacy`。

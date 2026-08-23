@@ -19,3 +19,5 @@
 ```
 
 `performance` 和 `conversion` 都允许为 `null`。`null` 表示未知，而不是 0。完整的视觉分析可写入 `key_frames.description`；没有视觉模型时，保留抽帧路径即可，不能凭路径描述画面。
+
+若把客户原话、截图、案例或业务数据用于信任/效果表达，可在对应视频的 `operator_notes` 或外部交付记录中补充以下最小元数据：`source`、`scope`、`recorded_at`、`publicity`（已授权 / 已匿名化 / 不公开 / 待确认）。没有这些信息时，材料只能作为待核线索，不能被渲染为客户事实或效果结论。
