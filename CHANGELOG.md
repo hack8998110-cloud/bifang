@@ -1,5 +1,12 @@
 # Changelog
 
+## V0.3.5
+
+- 统一开源发布口径：V0.3.5 为当前正式开源版，V0.2-rc 改为历史候选版。
+- `install` 与 `validate-install` 的全量安装清单新增 `bifang-clip`、`bifang-account-plan`、`bifang-evidence`。
+- README 与安装说明区分默认 6 个基础创作模块和 V0.3 的对标/老账号进阶模块。
+- 新增发布校验脚本，打包前检查版本、模块、安装脚本、压缩包内容和私有资料排除规则。
+
 ## V0.2-rc trial kit
 
 - `bifang-starter/topic/script/review/rewrite` 新增命题澄清、事实结构、显示优先于声称、意义闸门，避免模糊需求直接生成和商家自夸式内容通过。

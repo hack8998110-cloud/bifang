@@ -133,6 +133,16 @@ bifang-assets
 bifang-report
 ```
 
+已有对标视频、历史作品或老账号数据，再加 V0.3 进阶模块：
+
+```text
+bifang-clip
+bifang-account-plan
+bifang-evidence
+```
+
+运行 `install.ps1 -All` 或 `./install.sh --all` 会安装以上全部公开模块；默认安装仍只保留 6 个基础创作模块。
+
 历史兼容入口可选：
 
 ```text

@@ -39,6 +39,9 @@ OPTIONAL_SKILLS=(
   "bifang-report"
   "bifang-baokuan"
   "bifang-baokuan-batch"
+  "bifang-clip"
+  "bifang-account-plan"
+  "bifang-evidence"
 )
 
 SKILLS=("${CORE_SKILLS[@]}")

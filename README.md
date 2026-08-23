@@ -1,4 +1,4 @@
-# 毕方 V0.3
+# 毕方 V0.3.5
 
 ![毕方编导思维逻辑](assets/bifang-v0.2-dev-pixel-promo-hero.png)
 
@@ -43,7 +43,7 @@ chmod +x ./validate-install.sh
 ./validate-install.sh
 ```
 
-默认安装 6 个核心模块：
+默认安装 6 个基础创作模块：
 
 ```text
 bifang-starter
@@ -55,6 +55,15 @@ bifang-feedback
 ```
 
 详细说明见 [INSTALL.md](INSTALL.md)。
+
+如果你有对标视频、已发布内容或老账号数据，安装全部公开模块：
+
+```powershell
+.\install.ps1 -All
+.\validate-install.ps1 -All
+```
+
+其中 V0.3 进阶能力为：`bifang-clip`（拆片仿写）、`bifang-account-plan`（老账号规划）和 `bifang-evidence`（统一作品证据包）。
 
 ## 第一次这样问
 
@@ -152,7 +161,7 @@ chmod +x ./validate-install.sh
 
 也可以手动把需要的 skill 文件夹复制到你的 Agent skill 目录。
 
-## V0.3 新增能力
+## V0.3 / V0.3.5 进阶能力
 
 ### 拆片仿写
 
@@ -181,6 +190,12 @@ V0.2-rc 是正式候选版。当前目标是把 V0.1 的“能用”打磨成“
 今天先拍哪 3 条？
 第一条内容改稿时不能丢什么？
 ```
+
+## V0.3.5 发布一致性
+
+V0.3.5 是当前正式开源版：安装脚本、安装校验、README 和发布包使用同一套公开模块清单。V0.2-rc 仅保留为历史候选版；内测版的版本号是独立测试线，不与开源版版本高低比较。
+
+本版变更见 [RELEASE_NOTES_V0.3.5.md](RELEASE_NOTES_V0.3.5.md)，发包前检查见 [docs/release_checklist.md](docs/release_checklist.md)。
 
 ## 默认输出
 

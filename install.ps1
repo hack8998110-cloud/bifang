@@ -23,7 +23,10 @@ $optionalSkills = @(
   "bifang-assets",
   "bifang-report",
   "bifang-baokuan",
-  "bifang-baokuan-batch"
+  "bifang-baokuan-batch",
+  "bifang-clip",
+  "bifang-account-plan",
+  "bifang-evidence"
 )
 
 $skills = if ($All) { $coreSkills + $optionalSkills } else { $coreSkills }
