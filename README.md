@@ -1,5 +1,7 @@
 # 毕方 V0.3.6
 
+![毕方编导思维逻辑](assets/bifang-v0.2-dev-pixel-promo-hero.png)
+
 毕方是一套商业短视频内容判断 Skills：先判断用户真正想看什么，再生成选题、脚本、审核意见和发布复盘。
 
 它不是账号管理 SaaS，也不承诺爆款。它帮助你把“我想卖什么”翻译成“用户为什么会看、相信和行动”。
@@ -64,6 +66,12 @@
 - 安装后运行 [自测用例](tests/self_check_cases.md)。
 - 公开能力验收见 [验收清单](tests/open_source_acceptance.md)。
 - 发布维护者使用 [发布清单](docs/release_checklist.md)。
+
+## 交流与反馈
+
+欢迎反馈安装问题、行业样本、实际使用结果和跑偏案例。
+
+![微信交流反馈](assets/wechat-feedback.png)
 
 ## 许可
 
