@@ -35,6 +35,13 @@
 - `bifang-feedback`：发布后复盘，支持单条数据和老账号 9 条内容复盘。
 - `bifang-report`：交付报告组装，必须标注交付状态和证据缺口。
 
+## 本次开源包补充
+
+- 新增 `QUICKSTART.md`：安装后第一句话怎么问。
+- 新增 `templates/client_trial_account_plan.md`：客户试用账号基础规划模板。
+- 新增 `examples/client_trial/`：本地餐饮、全屋定制、知识 IP 三个试用交付样例。
+- 新增跨平台安装说明：Windows 使用 `install.ps1`，macOS/Linux 使用 `install.sh`，也可手动复制 skills 目录。
+
 ## 本轮验收结果
 
 | 验收项 | 结果 |

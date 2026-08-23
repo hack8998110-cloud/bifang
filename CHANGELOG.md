@@ -1,5 +1,27 @@
 # Changelog
 
+## V0.3.5
+
+- 统一开源发布口径：V0.3.5 为当前正式开源版，V0.2-rc 改为历史候选版。
+- `install` 与 `validate-install` 的全量安装清单新增 `bifang-clip`、`bifang-account-plan`、`bifang-evidence`。
+- README 与安装说明区分默认 6 个基础创作模块和 V0.3 的对标/老账号进阶模块。
+- 新增发布校验脚本，打包前检查版本、模块、安装脚本、压缩包内容和私有资料排除规则。
+
+## V0.2-rc trial kit
+
+- `bifang-starter/topic/script/review/rewrite` 新增命题澄清、事实结构、显示优先于声称、意义闸门，避免模糊需求直接生成和商家自夸式内容通过。
+- 新增 `QUICKSTART.md`，解决安装后第一句话不知道怎么问的问题。
+- 新增 `templates/client_trial_account_plan.md`，用于给潜在客户做账号基础规划试用交付。
+- 新增 `templates/client_trial_prompt_pack.md`，用于快速生成客户试用规划、老账号复盘、第一条脚本和反馈问题。
+- 新增 `templates/user_feedback_record.md`，用于记录真实用户试用反馈和升级判断。
+- 新增 `docs/promotion_kit.md` 和 `docs/first_10_user_test_plan.md`，用于招募第一批真实试用用户。
+- 新增 `validate-install.ps1`、`validate-install.sh` 和 `tests/self_check_cases.md`，用于安装后验证和对话自测。
+- 扩展 `templates/user_feedback_record.md`，新增客户简版反馈、内部复盘、案例授权和版本迭代判断。
+- 新增 GitHub Issue 模板和 `docs/feedback_guide.md`，用于收集开源用户反馈和 Bug。
+- 新增 `examples/client_trial/` 三个样例：社区面馆、全屋定制、知识 IP/课程顾问。
+- README 增加快速开始、试用模板和样例入口。
+- 安装说明改为跨平台口径，明确毕方是文本 skills，不限制 Windows/macOS/Linux。
+
 ## V0.2-rc
 
 - V0.2-dev 经过两轮真实公开账号低信息压测、老账号内容复盘、客户改稿纠偏、高风险脚本审核和完整交付链路压测后，升级为 V0.2 正式候选版。
@@ -66,7 +88,7 @@
 ## beta-2.7
 
 - 用网页版历史真实样例试跑：本地餐饮、生鲜馄饨、三农平谷大桃、洗护冷制皂、手工皂。
-- 新增 `tests/instance_runs_2026-07-18.md`，记录实例输出、评分和旧版失败点。
+- 新增 `docs/archive/tests/instance_runs_2026-07-18.md`，记录实例输出、评分和旧版失败点。
 - `bifang-topic`：空观看理由、旧字段 `viralElement/score/爆款元素`、跨行业风险套话一律视为旧流程污染。
 - `bifang-review`：新增旧流程污染打回规则，尤其拦截空 `watchReason`、行业风险错配和硬 CTA。
 - `bifang-report`：选题清单改为用户决策阶段/观看理由/看完收获/可信证据，不再默认展示评分。
@@ -77,7 +99,7 @@
 - 新增 `tests/positive_industry_starter_cases.md`，用 8 个低信息行业样例验证正向启发能力。
 - `bifang-starter`：新增“行业翻译成的用户判断题”显式输出项，低信息输入先教客户判断用户想看什么。
 - `bifang-topic`：新增“用户判断题”字段和正向启发规则，要求选题能看出“行业 → 用户判断题 → 选题”的推导链。
-- 新增 `tests/positive_industry_instance_runs_2026-07-18.md`，人工跑完 8 个正向行业样例并沉淀薄弱点。
+- 新增 `docs/archive/tests/positive_industry_instance_runs_2026-07-18.md`，人工跑完 8 个正向行业样例并沉淀薄弱点。
 - `bifang-starter/topic`：补强 B2B 工况假设、咨询课程具体场景、服务方说服客户保留用户视角三类弱点。
 - `bifang-baokuan` 和 `bifang-v4-orchestrator`：同步“行业翻译成的用户判断题”，修正 V4 判断核字段数量，保持多入口一致。
 - `README`：补充正向行业入口验收和失败回归验收文件，方便开源用户测试。

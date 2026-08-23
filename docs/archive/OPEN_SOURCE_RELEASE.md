@@ -7,8 +7,8 @@ This file records what is ready to publish and what should stay out of the first
 - `README.md`
 - `LICENSE`
 - `CHANGELOG.md`
-- `RELEASE_NOTES_V0.1_OPEN_SOURCE.md`
-- `RELEASE_NOTES_V0.2_DEV.md`
+- `docs/archive/RELEASE_NOTES_V0.1_OPEN_SOURCE.md`
+- `docs/archive/RELEASE_NOTES_V0.2_DEV.md`
 - `RELEASE_NOTES_V0.2_RC.md`
 - `V0.2_FINAL_ACCEPTANCE.md`
 - `templates/starter_output_template.md`
@@ -16,9 +16,9 @@ This file records what is ready to publish and what should stay out of the first
 - `tests/director_thinking_pressure_tests.md`
 - `tests/v0.2_pressure_matrix.md`
 - `tests/positive_industry_starter_cases.md`
-- `tests/positive_industry_instance_runs_2026-07-18.md`
+- `docs/archive/tests/positive_industry_instance_runs_2026-07-18.md`
 - `tests/failure_regression_cases.md`
-- `tests/instance_runs_2026-07-18.md`
+- `docs/archive/tests/instance_runs_2026-07-18.md`
 - `tests/open_source_acceptance.md`
 - `bifang-starter/`
 - `bifang-baokuan/`

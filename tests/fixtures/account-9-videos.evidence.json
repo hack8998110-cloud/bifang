@@ -1,0 +1,15 @@
+{
+  "schema_version": "bifang-evidence/v0.3",
+  "account": {"platform":"抖音","account_name":"装修测试号","business":"全屋装修","audience":"首套房业主"},
+  "videos": [
+    {"id":"v1","facts":{"title":"报价低就省钱吗","transcript_segments":[]},"performance":{"plays":12000},"conversion":{"inquiries":1,"qualified_inquiries":0,"conversions":0}},
+    {"id":"v2","facts":{"title":"工地收口细节","transcript_segments":[]},"performance":{"plays":9000},"conversion":{"inquiries":2,"qualified_inquiries":1,"conversions":1}},
+    {"id":"v3","facts":{"title":"增项避坑","transcript_segments":[]},"performance":{"plays":8000},"conversion":{"inquiries":0,"qualified_inquiries":0,"conversions":0}},
+    {"id":"v4","facts":{"title":"量房前准备","transcript_segments":[]},"performance":{"plays":3000},"conversion":{"inquiries":8,"qualified_inquiries":4,"conversions":2}},
+    {"id":"v5","facts":{"title":"材料到场验收","transcript_segments":[]},"performance":{"plays":5000},"conversion":{"inquiries":6,"qualified_inquiries":3,"conversions":1}},
+    {"id":"v6","facts":{"title":"报价单怎么读","transcript_segments":[]},"performance":{"plays":2500},"conversion":{"inquiries":5,"qualified_inquiries":2,"conversions":1}},
+    {"id":"v7","facts":{"title":"公司日常","transcript_segments":[]},"performance":{"plays":400},"conversion":{"inquiries":0,"qualified_inquiries":0,"conversions":0}},
+    {"id":"v8","facts":{"title":"装修鸡汤","transcript_segments":[]},"performance":{"plays":350},"conversion":{"inquiries":0,"qualified_inquiries":0,"conversions":0}},
+    {"id":"v9","facts":{"title":"团队介绍","transcript_segments":[]},"performance":{"plays":280},"conversion":{"inquiries":0,"qualified_inquiries":0,"conversions":0}}
+  ]
+}
