@@ -16,20 +16,23 @@ $coreSkills = @(
   "bifang-feedback"
 )
 
-$optionalSkills = @(
+$advancedSkills = @(
   "bifang-intake",
   "bifang-diagnosis",
   "bifang-profile",
   "bifang-assets",
   "bifang-report",
-  "bifang-baokuan",
-  "bifang-baokuan-batch",
   "bifang-clip",
   "bifang-account-plan",
   "bifang-evidence"
 )
 
-$skills = if ($All) { $coreSkills + $optionalSkills } else { $coreSkills }
+$legacySkills = @(
+  "bifang-baokuan",
+  "bifang-baokuan-batch"
+)
+
+$skills = if ($All) { $coreSkills + $advancedSkills + $legacySkills } else { $coreSkills }
 
 New-Item -ItemType Directory -Force -Path $Destination | Out-Null
 
@@ -37,7 +40,13 @@ $installed = @()
 $missing = @()
 
 foreach ($skill in $skills) {
-  $source = Join-Path $root $skill
+  $source = Get-ChildItem -LiteralPath (Join-Path $root "skills") -Directory -Recurse |
+    Where-Object { $_.Name -eq $skill } |
+    Select-Object -First 1 -ExpandProperty FullName
+  if (-not $source) {
+    $missing += $skill
+    continue
+  }
   $skillFile = Join-Path $source "SKILL.md"
 
   if (!(Test-Path -LiteralPath $skillFile)) {

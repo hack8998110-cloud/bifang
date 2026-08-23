@@ -102,6 +102,8 @@ macOS / Linux：
 
 2. 把需要的 `bifang-*` 文件夹复制进去。
 
+仓库中按 `skills/core`、`skills/advanced`、`skills/legacy` 分类；手动安装时复制具体 Skill 文件夹本身，而不是把分类目录整体复制到 Codex skills 目录。
+
 3. 重启 Codex 或新开一个会话。
 
 4. 用这句话测试：
