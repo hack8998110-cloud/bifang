@@ -32,22 +32,25 @@ CORE_SKILLS=(
   "bifang-feedback"
 )
 
-OPTIONAL_SKILLS=(
+ADVANCED_SKILLS=(
   "bifang-intake"
   "bifang-diagnosis"
   "bifang-profile"
   "bifang-assets"
   "bifang-report"
-  "bifang-baokuan"
-  "bifang-baokuan-batch"
   "bifang-clip"
   "bifang-account-plan"
   "bifang-evidence"
 )
 
+LEGACY_SKILLS=(
+  "bifang-baokuan"
+  "bifang-baokuan-batch"
+)
+
 SKILLS=("${CORE_SKILLS[@]}")
 if [[ "$INSTALL_ALL" == "1" ]]; then
-  SKILLS+=("${OPTIONAL_SKILLS[@]}")
+  SKILLS+=("${ADVANCED_SKILLS[@]}" "${LEGACY_SKILLS[@]}")
 fi
 
 mkdir -p "$DESTINATION"
@@ -56,7 +59,7 @@ echo "Bifang skills destination: $DESTINATION"
 echo "Installed:"
 
 for skill in "${SKILLS[@]}"; do
-  source_dir="${ROOT}/${skill}"
+  source_dir="$(find "${ROOT}/skills" -mindepth 2 -maxdepth 2 -type d -name "$skill" -print -quit)"
   if [[ ! -f "${source_dir}/SKILL.md" ]]; then
     echo "  - skipped missing: ${skill}"
     continue

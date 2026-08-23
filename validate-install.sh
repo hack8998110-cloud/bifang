@@ -31,22 +31,25 @@ CORE_SKILLS=(
   "bifang-feedback"
 )
 
-OPTIONAL_SKILLS=(
+ADVANCED_SKILLS=(
   "bifang-intake"
   "bifang-diagnosis"
   "bifang-profile"
   "bifang-assets"
   "bifang-report"
-  "bifang-baokuan"
-  "bifang-baokuan-batch"
   "bifang-clip"
   "bifang-account-plan"
   "bifang-evidence"
 )
 
+LEGACY_SKILLS=(
+  "bifang-baokuan"
+  "bifang-baokuan-batch"
+)
+
 SKILLS=("${CORE_SKILLS[@]}")
 if [[ "$INSTALL_ALL" == "1" ]]; then
-  SKILLS+=("${OPTIONAL_SKILLS[@]}")
+  SKILLS+=("${ADVANCED_SKILLS[@]}" "${LEGACY_SKILLS[@]}")
 fi
 
 echo "Checking Bifang skills in: $DESTINATION"

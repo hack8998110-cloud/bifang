@@ -14,20 +14,23 @@ $coreSkills = @(
   "bifang-feedback"
 )
 
-$optionalSkills = @(
+$advancedSkills = @(
   "bifang-intake",
   "bifang-diagnosis",
   "bifang-profile",
   "bifang-assets",
   "bifang-report",
-  "bifang-baokuan",
-  "bifang-baokuan-batch",
   "bifang-clip",
   "bifang-account-plan",
   "bifang-evidence"
 )
 
-$skills = if ($All) { $coreSkills + $optionalSkills } else { $coreSkills }
+$legacySkills = @(
+  "bifang-baokuan",
+  "bifang-baokuan-batch"
+)
+
+$skills = if ($All) { $coreSkills + $advancedSkills + $legacySkills } else { $coreSkills }
 
 Write-Host "Checking Bifang skills in: $Destination"
 

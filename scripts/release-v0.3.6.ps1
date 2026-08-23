@@ -14,14 +14,17 @@ if (-not $ReleaseDirectory) {
 
 $readme = Get-Content -Raw -LiteralPath (Join-Path $root "README.md")
 $changelog = Get-Content -Raw -LiteralPath (Join-Path $root "CHANGELOG.md")
-$releaseNotes = Join-Path $root "RELEASE_NOTES_V$($manifest.version).md"
+$releaseNotes = Join-Path $root "docs\releases\v$($manifest.version).md"
 if ($readme -notmatch "# 毕方 V$([regex]::Escape($manifest.version))") { throw "README version is not V$($manifest.version)." }
 if ($changelog -notmatch "## V$([regex]::Escape($manifest.version))") { throw "CHANGELOG does not contain V$($manifest.version)." }
 if (-not (Test-Path -LiteralPath $releaseNotes)) { throw "Missing release notes: $releaseNotes" }
 
 $skills = @($manifest.allPublicSkills)
 foreach ($skill in $skills) {
-  $skillFile = Join-Path $root "$skill\SKILL.md"
+  $skillDirectory = Get-ChildItem -LiteralPath (Join-Path $root "skills") -Directory -Recurse |
+    Where-Object { $_.Name -eq $skill } |
+    Select-Object -First 1 -ExpandProperty FullName
+  $skillFile = if ($skillDirectory) { Join-Path $skillDirectory "SKILL.md" } else { $null }
   if (-not (Test-Path -LiteralPath $skillFile)) { throw "Missing public skill: $skill" }
 }
 

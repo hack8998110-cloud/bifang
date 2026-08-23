@@ -1,5 +1,5 @@
 {
-  "version": "0.3.5",
+  "version": "0.3.6",
   "coreSkills": [
     "bifang-starter",
     "bifang-topic",
@@ -26,5 +26,5 @@
     "bifang-account-plan",
     "bifang-evidence"
   ],
-  "excludedPathSegments": [".git", "internal", "private"]
+  "excludedPathSegments": [".git", "internal", "private", "archive"]
 }
