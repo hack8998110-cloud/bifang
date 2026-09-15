@@ -8,15 +8,16 @@ $ErrorActionPreference = "Stop"
 $root = Split-Path -Parent $MyInvocation.MyCommand.Path
 
 $coreSkills = @(
+  "bifang"
+)
+
+$advancedSkills = @(
   "bifang-starter",
   "bifang-topic",
   "bifang-script",
   "bifang-review",
   "bifang-rewrite",
-  "bifang-feedback"
-)
-
-$advancedSkills = @(
+  "bifang-feedback",
   "bifang-intake",
   "bifang-diagnosis",
   "bifang-profile",
@@ -27,10 +28,7 @@ $advancedSkills = @(
   "bifang-evidence"
 )
 
-$legacySkills = @(
-  "bifang-baokuan",
-  "bifang-baokuan-batch"
-)
+$legacySkills = @("bifang-baokuan", "bifang-baokuan-batch")
 
 $skills = if ($All) { $coreSkills + $advancedSkills + $legacySkills } else { $coreSkills }
 
@@ -75,4 +73,4 @@ if ($missing.Count -gt 0) {
   }
 }
 
-Write-Host "Done. Restart Codex or open a new conversation, then try bifang-starter."
+Write-Host "Done. Restart Codex or open a new conversation, then tell Bifang what you need."

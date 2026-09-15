@@ -12,7 +12,7 @@
 
 必须通过：
 
-- 默认使用 `bifang-starter` 或等价三段式。
+- 默认使用 `bifang` 总入口，并在结尾出现“毕方已接管”回执。
 - 显式出现 `行业翻译成的用户判断题`。
 - 输出只有“用户真正想看的 / 今天先拍 3 条 / 第一条别改丢”为主体。
 - 不默认输出完整脚本、拍剪清单、评分表。
@@ -98,5 +98,5 @@
 
 - `npm.cmd run v4:check` 通过。
 - 以上 A-F 全部通过。
-- README 中 Quick Start 与 `bifang-starter` 默认输出一致。
+- README 中 Quick Start 与 `bifang` 默认输出一致。
 - `.codex/skills` 安装版与 `work/bifang_merged_latest` 源版本同步。

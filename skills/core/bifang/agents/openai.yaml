@@ -1,0 +1,6 @@
+interface:
+  display_name: "毕方"
+  short_description: "商业短视频一站式入口，自动判断该拍什么、怎么写、怎么改。"
+  default_prompt: "使用 $bifang 帮我判断这条商业短视频今天该怎么做。"
+policy:
+  allow_implicit_invocation: true

@@ -1,14 +1,10 @@
 {
-  "version": "0.3.7",
+  "version": "0.3.8",
   "coreSkills": [
-    "bifang-starter",
-    "bifang-topic",
-    "bifang-script",
-    "bifang-review",
-    "bifang-rewrite",
-    "bifang-feedback"
+    "bifang"
   ],
   "allPublicSkills": [
+    "bifang",
     "bifang-starter",
     "bifang-topic",
     "bifang-script",

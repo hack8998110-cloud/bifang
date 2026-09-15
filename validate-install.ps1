@@ -6,15 +6,16 @@ param(
 $ErrorActionPreference = "Stop"
 
 $coreSkills = @(
+  "bifang"
+)
+
+$advancedSkills = @(
   "bifang-starter",
   "bifang-topic",
   "bifang-script",
   "bifang-review",
   "bifang-rewrite",
-  "bifang-feedback"
-)
-
-$advancedSkills = @(
+  "bifang-feedback",
   "bifang-intake",
   "bifang-diagnosis",
   "bifang-profile",
@@ -51,4 +52,4 @@ if ($failed) {
   exit 1
 }
 
-Write-Host "Validation passed. Restart Codex or open a new conversation, then test bifang-starter."
+Write-Host "Validation passed. Restart Codex or open a new conversation, then test bifang."

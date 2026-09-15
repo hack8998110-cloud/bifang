@@ -7,7 +7,7 @@
 安装动作只有一个：
 
 ```text
-把需要的 bifang-* 文件夹复制到你的 Agent/Codex skills 目录。
+把 bifang 文件夹复制到你的 Agent/Codex skills 目录。
 ```
 
 ## skills 目录在哪里
@@ -43,18 +43,13 @@ chmod +x ./install.sh
 ./install.sh
 ```
 
-默认安装核心模块：
+默认只安装毕方总入口：
 
 ```text
-bifang-starter
-bifang-topic
-bifang-script
-bifang-review
-bifang-rewrite
-bifang-feedback
+bifang
 ```
 
-如果你要安装全部公开模块：
+只有团队、开发者或旧工作流用户需要安装全部公开模块：
 
 Windows：
 
@@ -100,7 +95,7 @@ macOS / Linux：
 ~/.codex/skills
 ```
 
-2. 把需要的 `bifang-*` 文件夹复制进去。
+2. 把 `bifang` 文件夹复制进去。
 
 仓库中按 `skills/core`、`skills/advanced`、`skills/legacy` 分类；手动安装时复制具体 Skill 文件夹本身，而不是把分类目录整体复制到 Codex skills 目录。
 
@@ -109,20 +104,15 @@ macOS / Linux：
 4. 用这句话测试：
 
 ```text
-用 bifang-starter 帮我看看：我开社区面馆，想拍抖音引流。
+我开社区面馆，想拍抖音引流，今天该拍什么？
 ```
 
 ## 推荐安装组合
 
-首次使用只装核心模块：
+首次使用只装毕方总入口：
 
 ```text
-bifang-starter
-bifang-topic
-bifang-script
-bifang-review
-bifang-rewrite
-bifang-feedback
+bifang
 ```
 
 需要客户建档和交付报告，再加：
@@ -143,7 +133,7 @@ bifang-account-plan
 bifang-evidence
 ```
 
-运行 `install.ps1 -All` 或 `./install.sh --all` 会安装以上全部公开模块；默认安装仍只保留 6 个基础创作模块。
+运行 `install.ps1 -All` 或 `./install.sh --all` 会安装原 16 个独立模块；默认安装只保留一个 `bifang` 总入口。
 
 历史兼容入口可选：
 
@@ -159,17 +149,13 @@ bifang-baokuan-batch
 Windows：
 
 ```text
-C:\Users\你的用户名\.codex\skills\bifang-starter\SKILL.md
-C:\Users\你的用户名\.codex\skills\bifang-topic\SKILL.md
-C:\Users\你的用户名\.codex\skills\bifang-script\SKILL.md
+C:\Users\你的用户名\.codex\skills\bifang\SKILL.md
 ```
 
 macOS / Linux：
 
 ```text
-~/.codex/skills/bifang-starter/SKILL.md
-~/.codex/skills/bifang-topic/SKILL.md
-~/.codex/skills/bifang-script/SKILL.md
+~/.codex/skills/bifang/SKILL.md
 ```
 
 每个 skill 文件夹里必须有 `SKILL.md`。
@@ -207,7 +193,7 @@ chmod +x ./validate-install.sh
 
 ### 为什么没有自动触发？
 
-通常是目录放错，或者复制后没有重启会话。确认 `bifang-starter/SKILL.md` 在 skills 目录下，再新开一个会话测试。
+通常是目录放错，或者复制后没有重启会话。确认 `bifang/SKILL.md` 在 skills 目录下，再新开一个会话测试。
 
 ### 能不能多账号使用？
 

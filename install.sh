@@ -24,15 +24,16 @@ while [[ $# -gt 0 ]]; do
 done
 
 CORE_SKILLS=(
+  "bifang"
+)
+
+ADVANCED_SKILLS=(
   "bifang-starter"
   "bifang-topic"
   "bifang-script"
   "bifang-review"
   "bifang-rewrite"
   "bifang-feedback"
-)
-
-ADVANCED_SKILLS=(
   "bifang-intake"
   "bifang-diagnosis"
   "bifang-profile"
@@ -70,4 +71,4 @@ for skill in "${SKILLS[@]}"; do
   echo "  - ${skill}"
 done
 
-echo "Done. Restart Codex or open a new conversation, then try bifang-starter."
+echo "Done. Restart Codex or open a new conversation, then tell Bifang what you need."
