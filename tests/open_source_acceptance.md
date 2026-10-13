@@ -94,9 +94,13 @@
 - 观点之后给判断标准、现场依据或可执行动作，不把观点写成普适事实。
 - 只有明确多账号/团队需求时才输出矩阵，并让判断、实操、示范三类内容有不同证据或承接。
 
+## H. 连续工作与手机端
+
+抽查 [连续工作验收](continuity_acceptance.md) 的 C-01、C-02、C-03、C-05、C-06，必须全部通过。
+
 ## 发布门槛
 
 - `npm.cmd run v4:check` 通过。
-- 以上 A-F 全部通过。
+- 以上 A-H 全部通过。
 - README 中 Quick Start 与 `bifang` 默认输出一致。
 - `.codex/skills` 安装版与 `work/bifang_merged_latest` 源版本同步。
