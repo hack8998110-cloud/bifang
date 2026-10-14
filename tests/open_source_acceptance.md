@@ -98,9 +98,13 @@
 
 抽查 [连续工作验收](continuity_acceptance.md) 的 C-01、C-02、C-03、C-05、C-06，必须全部通过。
 
+## I. 用户记忆隔离
+
+抽查 [用户记忆隔离验收](memory_isolation_acceptance.md) 的 M-01 至 M-06，必须全部通过。
+
 ## 发布门槛
 
 - `npm.cmd run v4:check` 通过。
-- 以上 A-H 全部通过。
+- 以上 A-I 全部通过。
 - README 中 Quick Start 与 `bifang` 默认输出一致。
 - `.codex/skills` 安装版与 `work/bifang_merged_latest` 源版本同步。
