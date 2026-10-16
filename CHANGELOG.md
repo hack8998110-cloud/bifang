@@ -1,5 +1,11 @@
 # Changelog
 
+## V0.3.21
+
+- `skills/core/bifang` 同步到 0.3.21（frontmatter `version: 0.3.21`，slug `bf`）。
+- 代运营报价前先做主页三处检查（人设 / 片型 / 晒货），并给出选题卡金样；缺标题则先要 8–12 条，禁止空口报价。
+- 代运营交付壳衔接报价：三处过了再谈价，实体代运营从 8000 起（人话一句，无套餐表）；REGRESSION #30。
+
 ## V0.3.20
 
 - `skills/core/bifang` 同步到 0.3.20（frontmatter `version: 0.3.20`，slug `bf`）。
