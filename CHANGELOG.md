@@ -1,5 +1,11 @@
 # Changelog
 
+## V0.3.20
+
+- `skills/core/bifang` 同步到 0.3.20（frontmatter `version: 0.3.20`，slug `bf`）。
+- 链接试读失败改为标准话术硬骨架：文首必须先出覆盖度、片型/晒货未知、要 8–12 条标题或截图，禁止先写假装读过的诊断。
+- 代运营交付壳回编号后衔接可拍稿：承接已确认方向与证据，不重问行业；REGRESSION #28–#29。
+
 ## V0.3.19
 
 - `skills/core/bifang` 同步到 0.3.19（frontmatter `version: 0.3.19`，slug `bf`）。
