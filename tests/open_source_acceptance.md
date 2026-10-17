@@ -102,9 +102,21 @@
 
 抽查 [用户记忆隔离验收](memory_isolation_acceptance.md) 的 M-01 至 M-06，必须全部通过。
 
+## J. V0.3.24 工作台与人话交付
+
+抽查 [`skills/core/bifang/REGRESSION.md`](../skills/core/bifang/REGRESSION.md) 中主页诊断、补标题重诊、今天先拍、改短、代运营报价前检查、广告腔改稿与黑话扫描场景。
+
+必须通过：
+
+- 链接试读失败时说明覆盖度，不假装读过作品；
+- 补足标题后重新判断片型与晒货，不能继续标未知；
+- 同一会话从诊断推进到成稿和改短时不要求重贴材料；
+- 成稿保留脚本类型、看点、证据闸门与低压承接；
+- 用户可见文本通过人话与公司黑话检查。
+
 ## 发布门槛
 
 - `npm.cmd run v4:check` 通过。
-- 以上 A-I 全部通过。
+- 以上 A-J 全部通过。
 - README 中 Quick Start 与 `bifang` 默认输出一致。
 - `.codex/skills` 安装版与 `work/bifang_merged_latest` 源版本同步。
